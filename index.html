@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Intro - Empowering Young Africans with Tech Skills</title>
+    <script src="https://kit.fontawesome.com/2bc9571cc5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-rocket"></i> Tech Intro
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact / Join</a></li>
+                <li><a href="#" onclick="showPage('support')">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page-section active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Building Tomorrow's Tech Leaders in Africa</h1>
+                <p class="tagline">Empowering developers, innovators, and communities through technology</p>
+                <div class="cta-buttons">
+                    <a href="#" onclick="showPage('contact')" class="btn btn-primary">
+                        <i class="fas fa-users"></i> Join Our Community
+                    </a>
+                    <a href="#" onclick="showPage('support')" class="btn btn-secondary">
+                        <i class="fas fa-heart"></i> Support Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-vision">
+            <div class="container">
+                <h2 class="section-title">Our Mission & Vision</h2>
+                <div class="mission-cards">
+                    <div class="mission-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Mission</h3>
+                        <p>To introduce and guide young Africans into technology through accessible resources, structured learning, and impactful community support.</p>
+                    </div>
+                    <div class="mission-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Vision</h3>
+                        <p>A generation of African students equipped with digital skills, innovative thinking, and equal access to opportunities — regardless of background.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do">
+            <div class="container">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">We provide comprehensive support for aspiring tech professionals across Africa</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Learning Roadmaps</h3>
+                        <p>Curated pathways for programming, design, AI, cybersecurity, and robotics</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Educational Resources</h3>
+                        <p>Weekly tech insights, educational content, and student-friendly explanations</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Opportunities</h3>
+                        <p>Challenges, competitions, and beginner-friendly projects</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users-cog"></i>
+                        <h3>Community Learning</h3>
+                        <p>Collaborative sessions and peer-to-peer support groups</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Partnerships</h3>
+                        <p>Connecting with institutions and tech communities</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Mentorship</h3>
+                        <p>Consistent guidance and motivation for your tech journey</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-unlock-alt"></i>
+                        <h4>Accessibility</h4>
+                        <p>Tech education for all</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Impact</h4>
+                        <p>Changing lives through learning</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-people-carry"></i>
+                        <h4>Community</h4>
+                        <p>Growing together</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Creativity</h4>
+                        <p>Inspiring innovation</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h4>Resilience</h4>
+                        <p>Encouraging growth</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page-section">
+        <section class="hero" style="padding: 8rem 2rem 4rem;">
+            <h1>About Tech Intro</h1>
+            <p class="tagline">Our Story, Mission, and Values</p>
+        </section>
+
+        <div class="container">
+            <h2 class="section-title">Founding Story</h2>
+            <div style="max-width: 900px; margin: 0 auto; background: white; padding: 3rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    Hi, my name is <strong>Takyi Romanus</strong>, and I'm a computer science student at the University of Energy and Natural Resources. My journey in technology started years ago, back in high school, when I was the Vice President of the Robotics Club at Opoku Ware School, Robotech. I was fascinated by how technology and AI can shape the world, and how robotics can bring ideas to life.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    However, my early journey wasn't without challenges. I came from a humble background, and there wasn't always space or resources for me to explore my interests fully. I knew there was more to learn, but balancing school, bills, and life meant that my tech know-how was limited at that time.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                    When I started university and joined the Computer Science program, I realized how vast the field is. There are countless paths, resources, and opportunities, but finding the right direction wasn't easy. I often felt like I was wasting time trying to figure out the most effective way to learn.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    During my first summer break, I sat down and asked myself: what if I could create a platform that guides others, so they don't face the same challenges I did? That's when <strong>Tech Intro</strong> was born. My vision was simple: provide targeted tech education, curated resources, and mentorship so students and young people can maximize their learning and take a direct path toward mastery.
+                </p>
+            </div>
+        </div>
+
+        <section class="mission-vision" style="margin-top: 3rem;">
+            <div class="container">
+                <h2 class="section-title">Mission Statement</h2>
+                <div style="max-width: 800px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                    <p style="font-size: 1.3rem; line-height: 1.8; color: var(--dark-color);">
+                        Tech Intro exists to bridge the gap between interest and opportunity — making it easier for young people to learn coding, design, AI, cybersecurity, robotics, and other essential digital skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section" style="margin-top: 0;">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-unlock-alt"></i>
+                        <h4>Accessibility</h4>
+                        <p>Making tech education available to everyone</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Impact</h4>
+                        <p>Creating real change in people's lives</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-people-carry"></i>
+                        <h4>Community</h4>
+                        <p>Learning and growing together</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Creativity</h4>
+                        <p>Fostering innovation and new ideas</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h4>Resilience</h4>
+                        <p>Building consistency and perseverance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page-section">
+        <section class="hero" style="padding: 8rem 2rem 4rem;">
+            <h1>Get In Touch</h1>
+            <p class="tagline">Join our community or reach out to collaborate</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@techintro.org</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ghana, West Africa</p>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Send Us A Message</h3>
+                    <div id="contactMessage" class="message"></div>
+                    <form onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Reason for Contact</label>
+                            <select id="contactReason">
+                                <option value="general">General Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="support">Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea id="contactMessageText" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Subscribe to Our Newsletter</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Receive updates, learning resources, and opportunities directly in your inbox</p>
+            
+            <div id="newsletterMessage" class="message"></div>
+            <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+                <button type="submit">
+                    <i class="fas fa-envelope"></i> Subscribe
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <!-- SUPPORT PAGE -->
+    <div id="support" class="page-section">
+        <section class="hero" style="padding: 8rem 2rem 4rem;">
+            <h1>Support Our Mission</h1>
+            <p class="tagline">Help us empower young Africans with technology education</p>
+        </section>
+
+        <section class="support-section">
+            <div class="support-content">
+                <h2 class="section-title">Why We Need Your Support</h2>
+                <div style="background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 3rem;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Tech Intro is building a platform to empower young Africans with tech education, opportunities, and innovation-focused programs.
+                    </p>
+                    <h4 style="margin-bottom: 1rem; color: var(--primary-color);">Your support helps us:</h4>
+                    <ul style="font-size: 1.05rem; line-height: 1.8; padding-left: 2rem;">
+                        <li>Provide structured tech learning resources</li>
+                        <li>Organize workshops and skill-building programs</li>
+                        <li>Build community-led tech initiatives in Ghana and Africa</li>
+                        <li>Expand our digital platform and reach more learners</li>
+                        <li>Sustain operations and future projects</li>
+                        <li>Create opportunities for students, developers, and young innovators</li>
+                    </ul>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1.5rem; font-weight: 600; color: var(--dark-color);">
+                        Supporting us means investing in the future of Africa's technology ecosystem.
+                    </p>
+                </div>
+
+                <h2 class="section-title">Impact of Your Support</h2>
+                <div style="background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-bottom: 3rem;">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Every contribution — collaboration, financial, or in-kind — helps us create real, measurable change:
+                    </p>
+                    <ul style="font-size: 1.05rem; line-height: 1.8; padding-left: 2rem;">
+                        <li>More students gain access to quality learning materials</li>
+                        <li>We run more workshops, coding sessions, and mentorship programs</li>
+                        <li>We onboard and support early-stage innovators and developers</li>
+                        <li>We can operate sustainably and deliver long-term value</li>
+                        <li>We create more community-driven projects and events</li>
+                    </ul>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1.5rem; font-weight: 600; color: var(--dark-color);">
+                        Your support drives impact across education, innovation, and youth empowerment.
+                    </p>
+                </div>
+
+                <h2 class="section-title">Ways You Can Support Tech Intro</h2>
+                <div class="support-ways">
+                    <div class="support-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Partner or Collaborate</h3>
+                        <p>Whether you represent a school, tech community, organization, or company, we welcome partnerships.</p>
+                        <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">You can collaborate through:</h4>
+                        <ul>
+                            <li>Sponsorships</li>
+                            <li>Resource support</li>
+                            <li>Program partnerships</li>
+                            <li>Mentorship contributions</li>
+                            <li>Innovation and project collaboration</li>
+                        </ul>
+                        <a href="#" onclick="showPage('contact')" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%;">
+                            Partner With Us
+                        </a>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Make a Donation</h3>
+                        <p>We accept donations of any amount — no fixed tiers, no minimum amount.</p>
+                        <p style="margin-top: 1rem; font-weight: 600;">Your donation helps sustain our mission and expand our reach.</p>
+                        <a href="#donation-form" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%;">
+                            Donate Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-section" id="donation-form">
+            <h2 class="section-title">Make Your Donation</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Every contribution, big or small, makes a difference in the lives of young African tech learners
+            </p>
+            
+            <div class="donation-form">
+                <div id="donateMessage" class="message"></div>
+                <h4 style="margin-bottom: 1rem; text-align: center;">Select or Enter Amount (GH₵)</h4>
+                <div class="amount-buttons">
+                    <button class="amount-btn" onclick="selectAmount(10)">GH₵10</button>
+                    <button class="amount-btn" onclick="selectAmount(25)">GH₵25</button>
+                    <button class="amount-btn" onclick="selectAmount(50)">GH₵50</button>
+                    <button class="amount-btn" onclick="selectAmount(100)">GH₵100</button>
+                    <button class="amount-btn" onclick="selectAmount(250)">GH₵250</button>
+                    <button class="amount-btn" onclick="selectAmount(500)">GH₵500</button>
+                </div>
+                <input type="number" id="customAmount" class="custom-amount" placeholder="Or enter custom amount (GH₵)" min="1">
+                <button class="donate-btn" onclick="processDonation()">
+                    <i class="fas fa-heart"></i> Donate Now
+                </button>
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                    <i class="fas fa-lock"></i> Secure payment powered by Paystack
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-rocket"></i> Tech Intro</h4>
+                <p style="margin-top: 1rem;">Empowering young Africans with practical tech skills. Unlocking digital opportunities for students through training and community impact.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                    <li><a href="#" onclick="showPage('support')">Support Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Our Mission</h4>
+                <p>To introduce and guide young Africans into technology through accessible resources, structured learning, and impactful community support.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest resources and opportunities</p>
+                <form onsubmit="subscribeNewsletter(event)" style="margin-top: 1rem;">
+                    <input type="email" id="footerNewsletterEmail" placeholder="Your email" style="width: 100%; padding: 0.8rem; border: none; border-radius: 5px; margin-bottom: 0.5rem;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.8rem;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech Intro. All rights reserved. | Founded with passion for empowering Africa's tech future</p>
+            <p style="margin-top: 0.5rem;">A student-led initiative | E-Learning Providers</p>
+        </div>
+    </footer>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+        let selectedAmount = 0;
+        const PAYSTACK_PUBLIC_KEY = 'pk_live_fba4f5380cf249fb188023365e41ecdf6c4d55f5';
+
+        // Page Navigation
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0, 0);
+            
+            // Close mobile menu if open
+            document.getElementById('navLinks').classList.remove('active');
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // Donation Functions
+        function selectAmount(amount) {
+            selectedAmount = amount;
+            document.querySelectorAll('.amount-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            document.getElementById('customAmount').value = '';
+        }
+
+        function processDonation() {
+            const customAmount = document.getElementById('customAmount').value;
+            const amount = customAmount ? parseFloat(customAmount) : selectedAmount;
+
+            if (!amount || amount < 1) {
+                showMessage('donateMessage', 'Please select or enter a valid donation amount', 'error');
+                return;
+            }
+
+            const handler = PaystackPop.setup({
+                key: PAYSTACK_PUBLIC_KEY,
+                email: 'donor@techintro.org',
+                amount: amount * 100,
+                currency: 'GHS',
+                ref: 'TECHINTRO_' + Math.floor((Math.random() * 1000000000) + 1),
+                callback: function(response) {
+                    fetch('/api/donate', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            amount: amount,
+                            reference: response.reference,
+                            status: 'success'
+                        })
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        showMessage('donateMessage', 'Thank you for your generous donation! Your support helps empower young African tech learners. Reference: ' + response.reference, 'success');
+                        document.getElementById('customAmount').value = '';
+                        selectedAmount = 0;
+                        document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('active'));
+                    })
+                    .catch(error => {
+                        showMessage('donateMessage', 'Donation processed but failed to record. Please contact us with reference: ' + response.reference, 'error');
+                    });
+                },
+                onClose: function() {
+                    showMessage('donateMessage', 'Transaction cancelled', 'error');
+                }
+            });
+            handler.openIframe();
+        }
+
+        // Newsletter Subscription
+        async function subscribeNewsletter(event) {
+            event.preventDefault();
+            const emailInput = event.target.querySelector('input[type="email"]');
+            const email = emailInput.value;
+
+            try {
+                const response = await fetch('/api/newsletter', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showMessage('newsletterMessage', 'Successfully subscribed! You\'ll receive our latest updates and resources.', 'success');
+                    emailInput.value = '';
+                } else {
+                    showMessage('newsletterMessage', data.message || 'Subscription failed. Please try again.', 'error');
+                }
+            } catch (error) {
+                showMessage('newsletterMessage', 'Network error. Please try again.', 'error');
+            }
+        }
+
+        // Contact Form Submission
+        async function submitContact(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const reason = document.getElementById('contactReason').value;
+            const message = document.getElementById('contactMessageText').value;
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, reason, message })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showMessage('contactMessage', 'Thank you for reaching out! We\'ll get back to you soon.', 'success');
+                    document.getElementById('contactName').value = '';
+                    document.getElementById('contactEmail').value = '';
+                    document.getElementById('contactMessageText').value = '';
+                } else {
+                    showMessage('contactMessage', data.message || 'Failed to send message. Please try again.', 'error');
+                }
+            } catch (error) {
+                showMessage('contactMessage', 'Network error. Please try again or email us directly.', 'error');
+            }
+        }
+
+        // Message Display
+        function showMessage(elementId, message, type) {
+            const messageEl = document.getElementById(elementId);
+            if (messageEl) {
+                messageEl.textContent = message;
+                messageEl.className = 'message ' + type;
+                messageEl.style.display = 'block';
+                
+                setTimeout(() => {
+                    messageEl.style.display = 'none';
+                }, 7000);
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.startsWith('#') && !href.includes('onclick')) {
+                    e.preventDefault();
+                    const element = document.querySelector(href);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
