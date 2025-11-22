@@ -11,9 +11,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
-// MongoDB Connection
-const MONGODB_URI = 'mongodb+srv://authenticationproject:BokaPiS53xEPUR90@cluster0.4it7eq8.mongodb.net/teched?retryWrites=true&w=majority';
-
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -302,7 +299,7 @@ app.post('/api/verify-payment', async (req, res) => {
             path: `/transaction/verify/${reference}`,
             method: 'GET',
             headers: {
-                Authorization: `Bearer sk_live_2527eeb64e790b8c7b1b7c3e04c8fd07c623e2a2`
+                Authorization: PAYSTACK_SECRET_KEY
             }
         };
 
@@ -387,4 +384,5 @@ app.listen(PORT, () => {
     console.log(` Contact API: http://localhost:${PORT}/api/contact`);
     console.log(` Newsletter API: http://localhost:${PORT}/api/newsletter`);
     console.log(` Donation API: http://localhost:${PORT}/api/donate`);
+
 });
