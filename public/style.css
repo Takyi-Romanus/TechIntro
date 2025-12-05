@@ -550,7 +550,7 @@
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
-            background: transparent;
+            background: none;
             
         }
 
